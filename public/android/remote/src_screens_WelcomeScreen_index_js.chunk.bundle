@@ -1,10 +1,1 @@
-(self["webpackChunkWeLo"] = self["webpackChunkWeLo"] || []).push([["src_screens_WelcomeScreen_index_js"],{
-
-/***/ 94788:
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-var _interopRequireDefault=__webpack_require__(64836);Object.defineProperty(exports, "__esModule", ({value:true}));exports["default"]=void 0;var _react=_interopRequireDefault(__webpack_require__(35466));var _reactNative=__webpack_require__(3958);var _Button=_interopRequireDefault(__webpack_require__(50017));var _jsxRuntime=__webpack_require__(33823);function WelcomeScreen(_ref){var navigation=_ref.navigation;return(0,_jsxRuntime.jsx)(_reactNative.View,{style:styles.container,children:(0,_jsxRuntime.jsx)(_Button.default,{title:'Login',onPress:function onPress(){return navigation.navigate('LoginScreen');}})});}var styles=_reactNative.StyleSheet.create({container:{width:'100%',height:'100%'}});var _default=WelcomeScreen;exports["default"]=_default;
-
-/***/ })
-
-}]);//# sourceMappingURL=src_screens_WelcomeScreen_index_js.chunk.bundle.map?platform=android
+(self.webpackChunkWeLo=self.webpackChunkWeLo||[]).push([["src_screens_WelcomeScreen_index_js"],{94788:function(e,n,t){var r=t(64836);Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;r(t(35466));var i=t(3958),a=r(t(50017)),c=t(33823);var o=i.StyleSheet.create({container:{width:"100%",height:"100%"}}),s=function(e){var n=e.navigation;return(0,c.jsx)(i.View,{style:o.container,children:(0,c.jsx)(a.default,{title:"Login",onPress:function(){return n.navigate("LoginScreen")}})})};n.default=s}}]);//# sourceMappingURL=src_screens_WelcomeScreen_index_js.chunk.bundle.map?platform=android
