@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
+router.get('/android/version', function(req, res, next) {
+  res.send('1.3.2');
+});
+
 module.exports = router;
