@@ -8,7 +8,6 @@ const dashboard = require('./data/dashboard.json')
 const app = express()
 const port = normalizePort(process.env.PORT || '3000');
 
-app.use(express.static(path.join(__dirname, 'public')));
 app.get('/host', (req, res) => {
     const platform = req.query.platform
     const appVersion = req.query.appVersion
@@ -33,6 +32,7 @@ app.get('/dashboard', (req, res) => {
 
     res.send(dashboard[platform][appVersion])
 })
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('port', port);
 app.listen(port, () => {
     console.log(`[CatalogServer] Server listening at port ${port} `)
