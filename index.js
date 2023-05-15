@@ -13,25 +13,25 @@ app.get('/host', (req, res) => {
     const platform = req.query.platform
     const appVersion = req.query.appVersion
 
-    res.send(host[platform][appVersion])
+    res.json(host[platform][appVersion])
 })
 app.get('/booking', (req, res) => {
     const platform = req.query.platform
     const appVersion = req.query.appVersion
 
-    res.send(booking[platform][appVersion])
+    res.json(booking[platform][appVersion])
 })
 app.get('/shopping', (req, res) => {
     const platform = req.query.platform
     const appVersion = req.query.appVersion
 
-    res.send(shopping[platform][appVersion])
+    res.json(shopping[platform][appVersion])
 })
 app.get('/dashboard', (req, res) => {
     const platform = req.query.platform
     const appVersion = req.query.appVersion
 
-    res.send(dashboard[platform][appVersion])
+    res.json(dashboard[platform][appVersion])
 })
 app.set('port', port);
 app.listen(port, () => {
