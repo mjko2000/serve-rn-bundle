@@ -8,7 +8,7 @@ const dashboard = require('./data/dashboard.json')
 const app = express()
 const port = normalizePort(process.env.PORT || '3000');
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/bundles',express.static(path.join(__dirname, 'public')));
 app.get('/host', (req, res) => {
     const platform = req.query.platform
     const appVersion = req.query.appVersion
